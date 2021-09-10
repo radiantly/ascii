@@ -92,6 +92,7 @@ body {
   display: flex;
   justify-content: center;
   clip-path: inset(0 0 0 0);
+  pointer-events: none;
 }
 
 h1 {
@@ -113,6 +114,7 @@ h1 {
 @media screen and (max-width: 600px) {
   body {
     font-size: 18px;
+    user-select: none;
   }
 }
 </style>
