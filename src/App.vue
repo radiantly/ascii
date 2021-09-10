@@ -36,7 +36,10 @@ export default {
       window.addEventListener("mousemove", setClip);
       document.body.addEventListener("mouseleave", setClipOut);
     });
-    onUnmounted(() => window.removeEventListener("mousemove", setClip));
+    onUnmounted(() => {
+      window.removeEventListener("mousemove", setClip);
+      document.body.removeEventListener("mouseleave", setClipOut);
+    });
     return {
       overlay,
     };
@@ -91,7 +94,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  clip-path: inset(0 0 0 0);
+  clip-path: inset(0 50vw 0 0);
   pointer-events: none;
 }
 
