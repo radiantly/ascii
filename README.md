@@ -1,24 +1,18 @@
-# ascii
+# Ascii
+
+> A quick prototype of having black-white slider over website content.
 
 ## Project setup
-```
-yarn install
+
+```sh
+yarn         # Install dependencies
+yarn serve   # Run development server
+
+# Misc
+yarn build   # Build for production
+yarn lint    # Lint code
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## License
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+MIT
