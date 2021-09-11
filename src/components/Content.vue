@@ -46,7 +46,7 @@ export default {
         dec: i.toString(),
         oct: i.toString(8),
         hex: i.toString(16),
-        char: i >= 32 && i <= 127 ? String.fromCharCode(i) : "NA",
+        char: i >= 32 && i < 127 ? String.fromCharCode(i) : "NA",
       });
     }
     const cols = ref([characters]);
